@@ -94,7 +94,7 @@ function App() {
             </div>
             :
             <div className='form-completed-message'>
-              <img src='images/icon-thank-you.svg' />
+              <img alt='Thank You' src='images/icon-thank-you.svg' />
               <h1>Thank you!</h1>
               <p>Thanks for confirming your subscription! We hope you have fun
                 using our platform. If you ever need support, please feel free
@@ -160,7 +160,7 @@ function App() {
 
             {currentStep == 5 &&
               <div className='form-completed-message-lg'>
-                <img src='images/icon-thank-you.svg' />
+                <img alt='Thank You' src='images/icon-thank-you.svg' />
                 <h1>Thank you!</h1>
                 <p>Thanks for confirming your subscription! We hope you have fun
                   using our platform. If you ever need support, please feel free

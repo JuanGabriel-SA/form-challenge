@@ -40,7 +40,7 @@ const Step02 = () => {
             <FormDescription>You have the option of monthly or yearly billing.</FormDescription>
             <div className="plan-section">
                 <div className="plan-content" id={planId === 0 ? 'plan-active' : undefined} onClick={e => setPlanId(0)}>
-                    <img src="images/icon-arcade.svg" />
+                    <img alt='Arcade' src="images/icon-arcade.svg" />
                     <div className="plan-description">
                         <h1>Arcade</h1>
                         <p>$9/mo</p>
@@ -54,7 +54,7 @@ const Step02 = () => {
                     </div>
                 </div>
                 <div className="plan-content" id={planId  === 1 ? 'plan-active' : undefined} onClick={e => setPlanId(1)}>
-                    <img src="images/icon-advanced.svg" />
+                    <imga alt='Advanced' src="images/icon-advanced.svg" />
                     <div className="plan-description">
                         <h1>Advanced</h1>
                         <p>$12/mo</p>
@@ -68,7 +68,7 @@ const Step02 = () => {
                     </div>
                 </div>
                 <div className="plan-content" id={planId === 2 ? 'plan-active' : undefined} onClick={e => setPlanId(2)}>
-                    <img src="images/icon-pro.svg" />
+                    <img alt="pro" src="images/icon-pro.svg" />
                     <div className="plan-description">
                         <h1>Pro</h1>
                         <p>$15/mo</p>
