@@ -1,0 +1,46 @@
+@use '../../assets/variables';
+@use '../../assets/mixins';
+
+.form-input {
+    display: grid;
+    flex-direction: column;
+    font-family: variables.$default-font;
+    margin-top: 15px;
+
+    label {
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        color: variables.$primary-color-01;
+    }
+
+    .input-labels {
+        display: flex;
+        align-items: end;
+
+        p {
+            font-size: 0.8rem;
+            margin: 0;
+            margin-bottom: 5px;
+            margin-left: auto;
+            font-weight: 700;
+            color: variables.$primary-color-05;
+        }
+    }
+
+    #field-error {
+        border: 1px solid variables.$primary-color-05;
+    }
+
+    input {
+        padding: 10px;
+        font-weight: 500;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid rgb(202, 202, 202);
+        @include mixins.default-transition;
+    }
+
+    input:focus {
+        border: 1px solid variables.$primary-color-02;
+    }
+}

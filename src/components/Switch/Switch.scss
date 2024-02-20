@@ -1,0 +1,19 @@
+@use '../../assets/variables';
+
+.switch-component {
+    background-color: variables.$primary-color-01;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+    .switch-ball {
+        width: 35%;
+        height: 70%;
+        background-color: white;
+        border-radius: 50%;
+        position: relative;
+        left: 5px;
+        top: 3px;
+    }
+}

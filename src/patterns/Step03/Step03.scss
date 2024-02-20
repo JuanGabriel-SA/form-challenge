@@ -1,0 +1,81 @@
+@use '../../assets/variables';
+@use '../../assets/mixins';
+
+.form-content-03 {
+    font-family: variables.$default-font;
+
+    .add-section {
+        @include mixins.default-transition;
+        display: flex;
+        gap: 1rem;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid variables.$neutral-color-02;
+        cursor: pointer;
+
+        input {
+            width: 20px;
+            cursor: pointer;
+            accent-color: white;
+            @include mixins.default-transition;
+        }
+
+        input:checked {
+            accent-color: variables.$primary-color-02;
+        }
+
+        .add-description {
+            margin-right: auto;
+
+            h1 {
+                font-size: 0.9rem;
+                margin: 0;
+                color: variables.$primary-color-01;
+                font-weight: 500;
+            }
+
+            p {
+                margin: 0;
+                margin-top: 2px;
+                font-size: 0.7rem;
+                color: variables.$neutral-color-01;
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: variables.$primary-color-02;
+        }
+    }
+
+    #add-active {
+        background-color: variables.$neutral-color-03;
+        border: 1px solid variables.$primary-color-02;
+    }
+
+    .add-section:hover {
+        border: 1px solid variables.$primary-color-02;
+    }
+}
+
+@media (min-width: 1024px) {
+    .add-section {
+        padding: 15px !important;
+        .add-description {
+
+            h1 {
+                font-size: 1rem !important;
+            }
+
+            p {
+                font-size: 0.9rem !important;
+            }
+        }
+
+        p {
+            font-size: 0.9rem !important;
+            margin-right: 1rem;
+        }
+    }
+}

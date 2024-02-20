@@ -1,0 +1,98 @@
+@use '../../assets/variables';
+@use '../../assets/mixins';
+
+.form-content-02 {
+    font-family: variables.$default-font;
+
+    #plan-active {
+        background-color: variables.$neutral-color-03;
+        border: 1px solid variables.$primary-color-02;
+    }
+
+    .plan-content {
+        display: flex;
+        gap: 1rem;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid variables.$neutral-color-02;
+        cursor: pointer;
+        @include mixins.default-transition;
+
+        .plan-description {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .yearly-text {
+                font-size: 0.75rem;
+                color: variables.$primary-color-01;
+            }
+
+            h1 {
+                font-size: 1rem;
+                margin: 0;
+                color: variables.$primary-color-01;
+                font-weight: 500;
+            }
+
+            p {
+                margin: 0;
+                margin-top: 5px;
+                font-size: 0.9rem;
+                color: variables.$neutral-color-01;
+            }
+        }
+    }
+
+    .plan-content:hover {
+        border: 1px solid variables.$primary-color-02;
+    }
+
+    .plan-type-section {
+        display: flex;
+        justify-content: center;
+        background-color: variables.$neutral-color-04;
+        padding: 10px;
+        gap: 1rem;
+
+        #active {
+            color: variables.$primary-color-01;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: variables.$neutral-color-01;
+            font-size: 0.9rem;
+            margin: 0;
+            font-weight: 400;
+            @include mixins.default-transition;
+        }
+    }
+}
+
+.plan-section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+
+    .plan-section {
+        flex-direction: row;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+
+    .plan-content {
+        flex-direction: column;
+        flex: 1;
+
+        img {
+            max-width: 40px;
+            margin-bottom: 1rem;
+        }
+    }
+
+}

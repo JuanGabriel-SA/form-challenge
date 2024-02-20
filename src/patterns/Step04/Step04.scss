@@ -1,0 +1,98 @@
+@use '../../assets/variables';
+
+.form-resume-body {
+    font-family: variables.$default-font;
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$neutral-color-04;
+    padding: 25px;
+    border-radius: 10px;
+    .plan-resume {
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid variables.$neutral-color-02;
+        padding-bottom: 10px;
+
+        .plan-description {
+            h1 {
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: variables.$primary-color-01;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                margin-top: 5px;
+                margin-left: auto;
+                color: variables.$neutral-color-01;
+                text-decoration: underline;
+                font-size: 0.8rem;
+                font-weight: 400;
+                transition: ease-out 150ms;
+                cursor: pointer;
+            }
+
+            p:hover {
+                color: variables.$primary-color-02;
+            }
+        }
+
+        p {
+            margin-left: auto;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: variables.$primary-color-01;
+        }
+    }
+
+    .add-section-resume {
+        display: flex;
+        margin-top: 15px;
+
+        h2,
+        h3 {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        h3 {
+            font-weight: 400;
+            color: variables.$neutral-color-01;
+        }
+
+        h2 {
+            font-weight: 500;
+            color: variables.$primary-color-01;
+            margin-left: auto;
+        }
+    }
+
+}
+
+.total-section {
+    display: flex;
+    align-items: center;
+    font-family: variables.$default-font;
+    padding: 15px;
+
+    h3 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: variables.$neutral-color-01;
+    }
+
+    h2 {
+        margin-left: auto;
+        font-size: 1rem;
+        color: variables.$primary-color-02;
+    }
+}
+
+@media (min-width: 1024px) {
+    .total-section {
+        h2 {
+            font-size: 1.3rem;
+        }
+    }
+}

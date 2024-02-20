@@ -1,0 +1,19 @@
+@use '../../assets/mixins';
+@use '../../assets/variables';
+
+.custom-button {
+    padding: 12px;
+    font-size: 0.9rem;
+    font-family: variables.$default-font;
+    background-color: variables.$primary-color-01;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    @include mixins.default-transition;
+}
+
+.custom-button:hover {
+    background-color: variables.$primary-color-02;
+}

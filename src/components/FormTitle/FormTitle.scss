@@ -1,0 +1,8 @@
+@use '../../assets/variables';
+
+.form-title {
+    font-family: variables.$default-font;
+    color: variables.$primary-color-01;
+    font-size: 1.6rem;
+    margin: 0px;
+}
